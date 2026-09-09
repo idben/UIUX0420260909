@@ -1,0 +1,30 @@
+@use "variables" as v;
+
+.btn{
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: v.$font-size-base;
+  font-weight: v.$font-weight-normal;
+  line-height: 1.6;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--btn-bg, #{v.$light});
+  color: var(--btn-color, #{v.$black});
+  transition: background-color 0.15s ease-in-out;
+
+  &:hover{}
+
+  &:active{}
+
+  &:focus-visible{}
+}
+
+.btn-primary{}
+
+.btn-danger{}
+
+.btn-success{}
+
+.btn-warning{}
